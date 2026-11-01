@@ -1,0 +1,10 @@
+{
+  "changed_hdl": [
+    "src/board_a/board_a_top.v",
+    "src/board_a/pc_wave_stream.v",
+    "src/board_a/status_dual.v"
+  ],
+  "all_pins_unchanged": true,
+  "bc_source_unchanged": true,
+  "hardware_accessed": false
+}

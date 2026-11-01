@@ -1,0 +1,3 @@
+sim/tb_remote_uart_control.v:19: warning: Port 5 (timbre) of control_scheduler expects 3 bits, got 2.
+sim/tb_remote_uart_control.v:19:        : Padding 1 high bits of the port.
+PASS UART checksum/sequence, remote DoMi control+record-event packet and timeout release event, copper preservation

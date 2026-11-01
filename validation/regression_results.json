@@ -1,0 +1,50 @@
+{
+  "pressure_pitch_bend": {
+    "passed": true,
+    "output": "PASS pressure pitch bend v12.1: 18 behavior checks\n"
+  },
+  "dual_control": {
+    "passed": true,
+    "output": "PASS full A top: dual UART, pressure, fifth flute/settings, five-sound wrap, gesture left/right/up/down and bypass\n"
+  },
+  "status_dual": {
+    "passed": true,
+    "output": "sim/tb_status_dual.v:11: warning: Port 3 (timbre) of status_dual expects 3 bits, got 2.\nsim/tb_status_dual.v:11:        : Padding 1 high bits of the port.\nPASS dual AA59: 108 bytes, same state, independent snapshotted receipts and checksums on both UARTs\n"
+  },
+  "pc_wave_stream": {
+    "passed": true,
+    "output": "PASS actual samples, AGC, CRC, interleaved status and quick touch preservation\n"
+  },
+  "rotary_encoder": {
+    "passed": true,
+    "output": "PASS default-rate hold300ms, CW/CCW, bounce, illegal jump, LFO, stop, disable monitor\n"
+  },
+  "encoder_strength": {
+    "passed": true,
+    "output": "PASS immediate motion target, full slow depth within 18ms, fast depth15000 / modulation about30000, smooth stop\n"
+  },
+  "encoder_short_states": {
+    "passed": true,
+    "output": "PASS 100us states, half-step/reverse, single-phase bounce, short glitch, diagnostic counts, real sample cadence vibrato\n"
+  },
+  "gesture_filter": {
+    "passed": true,
+    "output": "PASS first event,60ms direction guard,180ms repeat guard,40ms quiet rearm, persistent/chatter rejection, ambiguity, up/down and retry\n"
+  },
+  "paj_audit": {
+    "passed": true,
+    "output": "PASS PAJ wake retry, STOP/read, enable/mask/rate, I2C persistent-result suppression and direction change,0x73 scan, ID/init faults and reconnect\n"
+  },
+  "remote_gate": {
+    "passed": true,
+    "output": "PASS remote masks, copper OR, release, keepalive, timeout, opcode isolation and500ms default\n"
+  },
+  "remote_uart_control": {
+    "passed": true,
+    "output": "sim/tb_remote_uart_control.v:19: warning: Port 5 (timbre) of control_scheduler expects 3 bits, got 2.\nsim/tb_remote_uart_control.v:19:        : Padding 1 high bits of the port.\nPASS UART checksum/sequence, remote DoMi control+record-event packet and timeout release event, copper preservation\n"
+  },
+  "status_diagnostic": {
+    "passed": true,
+    "output": "sim/tb_status_diagnostic.v:12: warning: Port 3 (timbre) of status_extended expects 3 bits, got 2.\nsim/tb_status_diagnostic.v:12:        : Padding 1 high bits of the port.\nPASS 108-byte AA59 UART, audio counters, diagnostic fields and checksum\n"
+  }
+}

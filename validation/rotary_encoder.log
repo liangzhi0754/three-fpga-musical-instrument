@@ -1,0 +1,1 @@
+PASS default-rate hold300ms, CW/CCW, bounce, illegal jump, LFO, stop, disable monitor

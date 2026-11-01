@@ -1,0 +1,42 @@
+test_encoder_evidence_is_visible_without_enabling_effect (test_aux_diagnostic.DiagnosticTests.test_encoder_evidence_is_visible_without_enabling_effect) ... ok
+test_gesture_identity_error_is_shown (test_aux_diagnostic.DiagnosticTests.test_gesture_identity_error_is_shown) ... ok
+test_gesture_online_is_independent_of_distance (test_aux_diagnostic.DiagnosticTests.test_gesture_online_is_independent_of_distance) ... ok
+test_missing_sensor_is_not_hidden_by_absent_gesture (test_aux_diagnostic.DiagnosticTests.test_missing_sensor_is_not_hidden_by_absent_gesture) ... ok
+test_old_firmware_and_range_validity (test_aux_diagnostic.DiagnosticTests.test_old_firmware_and_range_validity) ... ok
+test_probe_distinguishes_no_ack_and_pin_failure (test_aux_diagnostic.DiagnosticTests.test_probe_distinguishes_no_ack_and_pin_failure) ... ok
+test_timeout_and_bad_id_are_distinct (test_aux_diagnostic.DiagnosticTests.test_timeout_and_bad_id_are_distinct) ... ok
+test_monitor_clears_old_ack_and_disables_buttons (test_control_mode.ControlModeTests.test_monitor_clears_old_ack_and_disables_buttons) ... ok
+test_monitor_never_writes_even_if_called_directly (test_control_mode.ControlModeTests.test_monitor_never_writes_even_if_called_directly) ... ok
+test_new_sequence_differs_from_last_pc_receipt (test_control_mode.ControlModeTests.test_new_sequence_differs_from_last_pc_receipt) ... ok
+test_pc_mode_can_write_existing_protocol (test_control_mode.ControlModeTests.test_pc_mode_can_write_existing_protocol) ... ok
+test_pc_mode_cannot_enable_on_stale_data (test_control_mode.ControlModeTests.test_pc_mode_cannot_enable_on_stale_data) ... ok
+test_record_requires_prepared_and_does_not_queue_while_busy (test_control_mode.ControlModeTests.test_record_requires_prepared_and_does_not_queue_while_busy) ... ok
+test_stop_can_replace_pending_receipt (test_control_mode.ControlModeTests.test_stop_can_replace_pending_receipt) ... ok
+test_audio_failure_counters_remain_visible_when_link_recovers (test_instrument_panel.PanelStatusTests.test_audio_failure_counters_remain_visible_when_link_recovers) ... ok
+test_busy_storage_is_not_hidden_by_prepared_flag (test_instrument_panel.PanelStatusTests.test_busy_storage_is_not_hidden_by_prepared_flag) ... ok
+test_cello_has_clear_name (test_instrument_panel.PanelStatusTests.test_cello_has_clear_name) ... ok
+test_pressure_bend_switch_sends_existing_bit0 (test_instrument_panel.PanelStatusTests.test_pressure_bend_switch_sends_existing_bit0) ... ok
+test_storage_fault_is_explained_and_stopping_is_visible (test_instrument_panel.PanelStatusTests.test_storage_fault_is_explained_and_stopping_is_visible) ... ok
+test_strings_report_all_chord_notes (test_instrument_panel.PanelStatusTests.test_strings_report_all_chord_notes) ... ok
+test_toggle_changes_only_clicked_feature (test_instrument_panel.PanelStatusTests.test_toggle_changes_only_clicked_feature) ... ok
+test_fragmented_press_and_release_frames (test_piano_host.HostLatencyTests.test_fragmented_press_and_release_frames) ... ok
+test_quick_tap_remains_visible_for_one_redraw (test_piano_host.HostLatencyTests.test_quick_tap_remains_visible_for_one_redraw) ... ok
+test_manifest_matches_all_constraints (test_pin_manifest.PinManifestTests.test_manifest_matches_all_constraints) ... ok
+test_release_does_not_claim_physical_validation (test_pin_manifest.PinManifestTests.test_release_does_not_claim_physical_validation) ... ok
+test_audio_counters_and_legacy_resync (test_three_board_protocol.ProtocolTests.test_audio_counters_and_legacy_resync) ... ok
+test_chunked (test_three_board_protocol.ProtocolTests.test_chunked) ... ok
+test_command (test_three_board_protocol.ProtocolTests.test_command) ... ok
+test_encoder_audit_reserved_bits_keep_sensor_status (test_three_board_protocol.ProtocolTests.test_encoder_audit_reserved_bits_keep_sensor_status) ... ok
+test_fifth_sound_is_not_truncated (test_three_board_protocol.ProtocolTests.test_fifth_sound_is_not_truncated) ... ok
+test_resync (test_three_board_protocol.ProtocolTests.test_resync) ... ok
+test_storage_fault_nibble_does_not_corrupt_base_state (test_three_board_protocol.ProtocolTests.test_storage_fault_nibble_does_not_corrupt_base_state) ... ok
+test_v10_encoder_status_uses_telemetry_slot (test_three_board_protocol.ProtocolTests.test_v10_encoder_status_uses_telemetry_slot) ... ok
+test_v6_diagnostic_chunked_and_checksum (test_three_board_protocol.ProtocolTests.test_v6_diagnostic_chunked_and_checksum) ... ok
+test_v7_probe_addresses_preserve_audio_and_aux (test_three_board_protocol.ProtocolTests.test_v7_probe_addresses_preserve_audio_and_aux) ... ok
+test_fragmented_real_samples_and_corruption (test_waveform.WaveformTests.test_fragmented_real_samples_and_corruption) ... ok
+test_wave_frame_does_not_replace_control_state_or_ack (test_waveform.WaveformTests.test_wave_frame_does_not_replace_control_state_or_ack) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.011s
+
+OK

@@ -1,0 +1,10 @@
+{
+  "B": {
+    "passed": true,
+    "log": "sim/tb_normal_timbres.v:15: warning: Port 5 (timbre) of node_synth expects 3 bits, got 2.\nsim/tb_normal_timbres.v:15:        : Padding 1 high bits of the port.\nPASS ordinary timbres0/1/2 bit-identical to v19 including chords, release, pitch and modulation\n"
+  },
+  "C": {
+    "passed": true,
+    "log": "sim/tb_normal_timbres.v:12: warning: Port 5 (timbre) of node_synth expects 3 bits, got 2.\nsim/tb_normal_timbres.v:12:        : Padding 1 high bits of the port.\nPASS ordinary timbres0/1/2 bit-identical to v19 including chords, release, pitch and modulation\n"
+  }
+}

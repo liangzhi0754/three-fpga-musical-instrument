@@ -1,0 +1,50 @@
+[
+  {
+    "width": 1280,
+    "height": 920,
+    "tab": 0,
+    "keyboard_width": 1014,
+    "keyboard_height": 208,
+    "keyboard_ratio": 0.7921875
+  },
+  {
+    "width": 1280,
+    "height": 920,
+    "tab": 1,
+    "keyboard_width": 1014,
+    "keyboard_height": 208,
+    "keyboard_ratio": 0.7921875
+  },
+  {
+    "width": 1080,
+    "height": 780,
+    "tab": 0,
+    "keyboard_width": 848,
+    "keyboard_height": 104,
+    "keyboard_ratio": 0.7851851851851852
+  },
+  {
+    "width": 1080,
+    "height": 780,
+    "tab": 1,
+    "keyboard_width": 848,
+    "keyboard_height": 104,
+    "keyboard_ratio": 0.7851851851851852
+  },
+  {
+    "width": 1600,
+    "height": 900,
+    "tab": 0,
+    "keyboard_width": 1280,
+    "keyboard_height": 188,
+    "keyboard_ratio": 0.8
+  },
+  {
+    "width": 1600,
+    "height": 900,
+    "tab": 1,
+    "keyboard_width": 1280,
+    "keyboard_height": 188,
+    "keyboard_ratio": 0.8
+  }
+]
