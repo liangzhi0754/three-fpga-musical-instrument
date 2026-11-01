@@ -1,0 +1,17 @@
+# Python and generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+rebuilt/
+*.gprj.user
+
+# Gowin generated implementation output
+impl/
+projects/*/impl/
+
+# Local editor and machine files
+.vscode/
+.idea/
+*.log
+!validation/**/*.log
+!validation/*.log
