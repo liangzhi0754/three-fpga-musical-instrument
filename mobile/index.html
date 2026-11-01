@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f7f6">
+  <title>随身乐器 · 竹笛版</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="protocol.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header><div><h1>随身乐器</h1><p>七键复音 · 竹笛版</p></div><button id="btnConnect" class="primary">连接蓝牙</button></header>
+<main>
+  <div class="row"><span id="blePill" class="pill">蓝牙未连接</span><span id="dataPill" class="pill">数据离线</span><button id="btnSim">模拟演示</button></div>
+  <p id="supportHint" class="hint">iPhone 请使用支持 Web Bluetooth 的 BLE 浏览器；Safari 不支持连接。</p>
+  <section class="card"><h2>弹奏</h2><div id="piano" class="piano" aria-label="七键多点触控键盘"></div><p class="hint">支持多指同时按键，与铜片触摸合奏；声音由 FPGA 输出。</p><div class="row"><span id="stTouch">—</span><span id="stPoly" class="pill">0 / 7 键</span></div></section>
+  <section class="card"><h2>音色</h2><div id="timbres" class="row">
+    <button class="timbre" data-mode="0">正弦</button><button class="timbre" data-mode="1">锯齿</button><button class="timbre" data-mode="2">方波</button><button class="timbre" data-mode="3">大提琴32</button><button class="timbre" data-mode="4">空灵竹笛32</button>
+  </div><p class="hint">最多七键复音；32 指每音的谐波数。</p></section>
+  <section class="card"><h2>演奏表情</h2><div class="row"><button class="feat" data-bit="0">压力表情（升／降音）</button><button class="feat" data-bit="1">编码器颤音</button><button class="feat" data-bit="2">手势切换</button><button id="btnZero" data-command>压力零点</button></div><p class="hint">释放两块压力片后设置零点；旋转编码器调节颤音。</p></section>
+  <section class="card"><h2>设备录制</h2><div class="row"><button id="btnPrepare" data-store="16" class="danger">准备／擦除</button><button id="btnRec" data-store="17">开始录制</button><button id="btnStop" data-store="18">停止</button><button id="btnPlay" data-store="19">重演</button><button id="btnSave" data-store="20">保存参数</button></div><p id="stStore" role="status">等待设备状态</p><p class="hint">停止后请等“停止收尾中”结束，再开始下一次操作。</p></section>
+  <section class="card"><h2>本地曲谱</h2><div class="row"><select id="songSelect" aria-label="选择曲谱"><option value="twinkle">小星星</option><option value="ode">欢乐颂</option></select><label>BPM <input id="bpm" type="number" value="100" min="40" max="240"></label><button id="btnScore">播放指引</button><button id="btnLoadScore">载入 JSON</button><input id="scoreFile" type="file" accept=".json,application/json" hidden></div><div id="scorebar" class="scorebar" aria-hidden="true"></div><p id="scoreHint" class="hint" role="status">橙色框提示下一拍；曲谱仅在本地显示，不发送到设备。</p></section>
+  <section class="card"><h2>乐器状态</h2><dl class="stats">
+    <div><dt>音色</dt><dd id="stTimbre">—</dd></div><div><dt>音高旋钮</dt><dd id="stPitch">—</dd></div><div><dt>音量旋钮</dt><dd id="stVolume">—</dd></div><div><dt>B / C 链路</dt><dd id="stLinks">—</dd></div><div><dt>手机命令回显</dt><dd id="stSeq">—</dd></div><div><dt>有效帧率</dt><dd id="stRate">—</dd></div>
+  </dl><p id="stEncoder">编码器：—</p><p id="stGesture">手势：—</p><p id="stPressure">压力 ADC：—</p></section>
+  <details class="card"><summary>传感器与诊断</summary><dl class="stats"><div><dt>MPR121 触摸</dt><dd id="stMpr">—</dd></div><div><dt>ADS1115</dt><dd id="stAds">—</dd></div><div><dt>ADC 芯片 0 / 1 / 2</dt><dd id="stAdsOnline">—</dd></div><div><dt>辅助传感器</dt><dd id="stAux">—</dd></div></dl><p class="hint">旧距离传感器只保留诊断，不控制颤音。</p><pre id="stAudio">音频链路：—</pre><pre id="stDiagnostic">辅助诊断：—</pre><pre id="stProbe">I²C 探测：—</pre><pre id="stEncoderDiagnostic">编码器引脚诊断：未提供</pre><p id="stBad" class="hint">校验丢弃：0</p></details>
+  <details class="card"><summary>连接日志</summary><pre id="log" role="log"></pre></details>
+</main>
+<footer>v21 手机界面 · Web Bluetooth</footer>
+</body>
+</html>
